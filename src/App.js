@@ -3,6 +3,7 @@ import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Preloader from "../src/components/Pre";
+import Contact from "./components/Contact/Contact";
 import {
   BrowserRouter as Router,
   Route,
@@ -10,7 +11,7 @@ import {
   Navigate
 } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
-// import "./style.css";
+import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -33,6 +34,7 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </div>
