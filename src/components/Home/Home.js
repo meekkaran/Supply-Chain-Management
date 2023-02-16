@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Home2 from "./Home2";
 import homeLogo from "../../Assets/air4.jpg";
+import bgImage from "../../Assets/air1.jpg";
 import Button from "react-bootstrap/Button";
 import "./home.css";
 
@@ -10,6 +11,7 @@ function Home() {
     <section>
       <Container fluid className="home-section" id="home">
         <Container className="home-content">
+          
           <Row>
             <Col md={7} className="home-header">
                 <div className="heading-name">
@@ -21,7 +23,7 @@ function Home() {
                         a step by step procedure to get your items delivered safely to your door steps and a way to track your items.
                     </h4>
                     <p>Simplify your life</p>
-                    <Button variant="primary">
+                    <Button  className="home-buttons">
                         Browse our plans
                     </Button>
                 </div>
