@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Home2 from "./Home2";
 import homeLogo from "../../Assets/air4.jpg";
 import Button from "react-bootstrap/Button";
+import "./home.css";
 
 function Home() {
   return (

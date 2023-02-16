@@ -1,6 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import Home3 from "./Home3";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import { 
   AiFillGithub,
   AiOutlineTwitter,
@@ -11,6 +10,11 @@ import FindInPageIcon from '@mui/icons-material/FindInPage';
 import RequestQuoteIcon from '@mui/icons-material/RequestQuote';
 import FollowTheSignsIcon from '@mui/icons-material/FollowTheSigns';
 import AddReactionIcon from '@mui/icons-material/AddReaction';
+import Button from "react-bootstrap/Button";
+import image1 from "../../Assets/homeimg1.jpg";
+import image2 from "../../Assets/homeimg2.jpg";
+import image3 from "../../Assets/air3.jpg";
+
 
 function Home2() {
   return (
@@ -46,12 +50,63 @@ function Home2() {
               <p>Get your package delivered fully.</p>
             </div>
           </Col>
+        </Row>
+      </Container>
 
+      <Container className="home-about-section">
+        <img src=""/>
+        <Row>
+          <h1>Arabian Sourcing is much more than a Supply chain</h1>
+          <h3>Browse our plans</h3>
+          <Col md={4} className="home-card">
+            <Card className="home-card-view">
+              <Card.Img variant="top" src={image1} component="img" alt="card-img" />
+              <Card.Body>
+                <Card.Title>Loddjf </Card.Title>
+                <Card.Text style={{ textAlign: "justify" }}>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?</p>
+                </Card.Text>
+                <Button style={{ backgroundColor: "#d4af37"}} href="#" target="_blank">
+                  LEARN MORE
+                </Button>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col md={4} className="home-card">
+            <Card className="home-card-view">
+              <Card.Img variant="top" src={image2} component="img" alt="card-img" />
+              <Card.Body>
+                <Card.Title>Warehouse Solutions</Card.Title>
+                <Card.Text style={{ textAlign: "justify" }}>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                     Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo 
+                     reprehenderit optio amet ab temporibus asperiores quasi cupiditate.Eligendi non quis Eligendi non quis exercitationem culpa nesciunt nihil autexercitationem culpa nesciunt nihil aut Voluptatum ducimus voluptates voluptas?</p>
+                </Card.Text>
+                <Button variant="primary" href="#" target="_blank">
+                  LEARN MORE
+                </Button>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col md={4} className="home-card">
+            <Card className="home-card-view">
+              <Card.Img variant="top" src={image3} component="img" alt="card-img" />
+              <Card.Body>
+                <Card.Title>Transportation </Card.Title>
+                <Card.Text style={{ textAlign: "justify" }}>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil autEligendi non quis exercitationem culpa nesciunt nihil autEligendi non quis exercitationem
+                     culpa nesciunt nihil autEligendi non quis exercitationem culpa nesciunt nihil autEligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?</p>
+                </Card.Text>
+                <Button variant="primary" href="#" target="_blank">
+                  LEARN MORE
+                </Button>
+              </Card.Body>
+            </Card>
+          </Col>
         </Row>
       </Container>
 
 
-      <Home3 />
     </Container>
   );
 }
