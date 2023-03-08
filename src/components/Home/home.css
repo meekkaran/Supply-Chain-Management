@@ -8,9 +8,8 @@
   
   .home-section {
     position: relative;
-    z-index: -1;
+    /* z-index: -1; */
     background-image: var(--image-gradient), url(../../Assets/air1.jpg);
-    /* background-position: top center; */
     background-repeat: no-repeat;
     padding-bottom: 30px !important;
     padding-top: 30px !important;
@@ -150,4 +149,5 @@
 
 .home-card .home-buttons{
   background-color: #d4af37;
+  color: #fff;
 }

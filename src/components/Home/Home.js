@@ -27,9 +27,6 @@ function Home() {
                         Browse our plans
                     </Button>
                 </div>
-              
-              {/* <div style={{ padding: 50, textAlign: "left" }}>
-              </div> */}
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
