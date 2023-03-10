@@ -24,7 +24,7 @@ function Home() {
                     </h4>
                     <p>Simplify your life</p>
                     <Button  className="home-buttons">
-                        Browse our plans
+                        GET A QUOTE
                     </Button>
                 </div>
             </Col>

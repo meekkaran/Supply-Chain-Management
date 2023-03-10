@@ -10,7 +10,7 @@
   }
   
   .navbar {
-    background-color: #404040 !important;
+    background-color: #000 !important;
     position: fixed !important;
     transition: all 0.3s ease-out 0s !important;
     padding: 0.3rem 2rem !important;
