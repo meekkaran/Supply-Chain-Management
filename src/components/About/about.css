@@ -1,11 +1,62 @@
 .about-section {
     position: relative !important;
     padding-top: 150px !important;
-    /* padding-bottom: 30px !important; */
+    padding-bottom: 30px !important; 
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+.about-first{
+  position: relative;
+  margin: 0 auto;
+  box-sizing: border-box;
+  /* border: 2px solid green;
+  border-radius: 10px; */
+}
+.about-first h1{
+  
+}
+.about-first hr{
+  width: 500px;
+  height: 5px;
+  background-color: yellow;
+  margin: 0 auto;
+  border: none;
+  text-align: center;
+}
+.about-description hr{
+  width: 100px;
+  height: 5px;
+  background-color: yellow;
+  margin: 0 auto;
+  border: none;
+  align-items: left;
+  text-align: left;
+  
+}
+.about-description{
+  padding: 20px;
+}
+.about-description h3{
+  /* padding: 10px; */
+  /* text-align: left; */
+}
+.about-description .words{
+  padding: 50px !important;
+}
+.about-description p{
+  text-align: justify;
+  font-size: 17px;
+  line-height: normal;
+}
+.about-description img{
+  height: 90%;
+  width: 80%;
+}
+.about-first h2{
+  padding: 50px;
+}
+
 .home-card {
     padding-top: 50px !important;
     padding-bottom: 50px !important;

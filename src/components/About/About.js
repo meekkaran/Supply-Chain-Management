@@ -8,35 +8,74 @@ import { TextField, Typography } from "@mui/material";
 import RateReviewIcon from '@mui/icons-material/RateReview';
 import SourceIcon from '@mui/icons-material/Source';
 import FactoryIcon from '@mui/icons-material/Factory';
+import homeLogo from "../../Assets/air4.jpg";
 
 function About() {
   return (
     <section>
       <Container fluid className="about-section" id="about">
-        <h2>About Arabian Sourcing Limited</h2>
-        <Container>
-        <Row>
-          <Col md={6} className="about-description">
-            <div className="">
-              <h3>Choose A service</h3>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
-            </div>
-          </Col>
-          <Col md={6} className="about-description">
-            <div className="">
-              <h3>Track Your Product</h3>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
-            </div>
-          </Col>
-        </Row>
+        
+        <Container fluid className="about-first">
+          <h1>About Arabian Sourcing Limited</h1>
+          <hr/>
+          <Row>
+            <Col md={5} className="about-description">
+                  <img
+                  src={homeLogo}
+                  alt="home pic"
+                  className="about-img"
+                  // style={{ height: "100%" }}
+                />
+            </Col>
+            <Col md={7} className="about-description">
+              <div className="words">
+                <p>ASL is a leading supply chain management company offering sourcing teams resilient and sustainable solutions 
+                  to reliably bring products to market. We offer unbeatable technical knowledge in various fields from the sourcing 
+                  of agricultural products to the implementation and distribution of software solutions through our seamless operations 
+                  and outstanding technical expertise. 
+                  <br/>
+                  With years of technical experience in the African marketplace and an expertly and 
+                  carefully curated partnership with industry stakeholders, your project is guaranteed success with us.</p>
+                  
+              
+                <h3>Sourcing</h3>
+                <hr/>
+                <p>Our mainstay business is in developing, implementing & managing complicated ethical and sustainable 
+                  supply chains for high-volume consumables for our clients, mitigating their supply side risks and therefore 
+                  empowering them to focus on growth & scaling.
+                  <br/><br/> 
+                  ASL helps businesses & established companies find & manage the most reliable & qualified overseas suppliers for their 
+                  core products.
+                  <br/>
+                  Our supplier identification and production management systems mean that the supply-side uncertainties and product risks 
+                  are reliably taken care of when dealing with international suppliers thereby giving our clients peace of mind to focus 
+                  on their core business.
+                </p>
 
+                <h3>Logistics</h3>
+                <hr/>
+                <p>We offer logistics and supply chain consultancy to support your industry and trade in the global exchange of goods 
+                  through land transport, worldwide air and ocean freight, contract logistics, and supply chain management to and 
+                  from the African marketplace by offering a service-oriented management approach.</p>
+              
+                <h3>Supply Chain Management</h3>
+                <hr/>
+                <p>ASL has specialised in logistics and supply chain IT software and system implementation and customization. 
+                  We leverage our deep expertise through successful cooperation with solutions vendors to help companies leverage 
+                  and deploy software investments that are  custom-made, scalable solutions or carefully deployed enterprise solutions.</p>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+        
+        {/* vision mission section */}
         <Container>
         <h2>We toil diligently to deliver value to all parties in our supply chain from the producer to the end consumer.</h2>
         <Row>
         <Col md={4} className="home-card">
             <Card className="home-card-view">
               <Card.Body>
-                <RateReviewIcon className="icon-colour" style={{ fontSize: "50px" }}/>
+                <Card.Img variant="top" src={bgQuote} alt="card-img" />
                 <Card.Title>OUR PRODUCTS </Card.Title>
                 <Card.Text style={{ textAlign: "center" }}>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?</p>
@@ -44,15 +83,48 @@ function About() {
               </Card.Body>
             </Card>
           </Col>
+
           <Col md={4} className="home-card">
             <Card className="home-card-view">
               <Card.Body>
-                <SourceIcon className="icon-colour" style={{ fontSize: "50px" }}/>
-                <Card.Title>TARGET MARKET</Card.Title>
+                <Card.Img variant="top" src={bgQuote} alt="card-img" />
+                <Card.Title>OUR VISION </Card.Title>
                 <Card.Text style={{ textAlign: "center" }}>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                     Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo 
-                     reprehenderit optio amet ab temporibus asperiores quasi cupiditate.Eligendi non quis Eligendi non quis exercitationem culpa nesciunt nihil autexercitationem culpa nesciunt nihil aut Voluptatum ducimus voluptates voluptas?</p>
+                  <p>It is our commitment to remove bottlenecks that hinder market access for our producers in the
+                    African continent from reaching their desired markets by being the supply chain partner of choice</p>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+
+          <Col md={4} className="home-card">
+            <Card className="home-card-view">
+              <Card.Body>
+                <Card.Img variant="top" src={bgQuote} alt="card-img" />
+                <Card.Title>OUR MISION </Card.Title>
+                <Card.Text style={{ textAlign: "center" }}>
+                  <p>To be the supply chain partner of choice for our partners by offering a seamless link for  
+                    African producers to the world markets through our hub in Dubai</p>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+        </Container>
+
+        {/* our team section */}
+
+        <Container>
+          <h1>Our Team</h1>
+          <Row>
+            <Col md={4} className="home-card">
+            <Card className="home-card-view">
+              <Card.Body>
+                <FactoryIcon className="icon-colour" style={{ fontSize: "50px" }}/>
+                <Card.Title>OUR MISION </Card.Title>
+                <Card.Text style={{ textAlign: "center" }}>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil autEligendi non quis exercitationem culpa nesciunt nihil autEligendi non quis exercitationem
+                     culpa nesciunt nihil autEligendi non quis exercitationem culpa nesciunt nihil autEligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?</p>
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -69,40 +141,9 @@ function About() {
               </Card.Body>
             </Card>
           </Col>
-        </Row>
-        </Container>
-
-        {/* our team section */}
-
-        <Container>
-          <h1>Our Team</h1>
-          {/* <div class="header"><h1>Our Team</h1></div>
-          <div class="teams">
-            <img src="svg/profil1.vg" alt="team img"></img>
-            <div className="name">John Doe</div>
-            <div className="design">Manager</div>
-            <div className="about">dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-             printer took a galley of type and scrambled it to make 
-             a type specimen book.</div>
-            <div className="social-links">
-              <a href="#"><i className="fa fa-facebook"></i></a>
-              <a href="#"><i className="fa fa-twitter"></i></a>
-              <a href="#"><i className="fa fa-linkedIn"></i></a>
-            </div>
-          </div> */}
-          <Row>
-            <Col md={6} className="team-section">
-              ggb
-            </Col>
-            <Col md={6} className="team-section">
-              ggb
-            </Col>
           </Row>
         </Container>
-
   
-      </Container>
-
       </Container>
 
     </section>
