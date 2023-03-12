@@ -5,6 +5,7 @@ import { Box } from "@mui/system";
 import { AiOutlineTwitter, AiFillFacebook} from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import "./about.css";
+// import homeLogo from "../../Assets/homeimg2";
 import bgQuote  from "../../Assets/air2.jpg";
 import { TextField, Typography } from "@mui/material";
 import RateReviewIcon from '@mui/icons-material/RateReview';
