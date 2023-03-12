@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col, Card, ButtonGroup } from "react-bootstrap";
 import { 
   AiFillGithub,
   AiOutlineTwitter,
@@ -21,7 +21,7 @@ import KeyboardReturnIcon from '@mui/icons-material/KeyboardReturn';
 
 function Home2() {
   return (
-    <Container fluid className="home-about-section" id="about">
+    <Container fluid className="home-about-section">
       <Container>
         <Row>
           <h1 style={{ textAlign: "center" }}>How We Work</h1>
@@ -56,16 +56,30 @@ function Home2() {
         </Row>
       </Container>
 
-      <Container className="home-about-section">
+      <Container className="home-about">
         <h1>Arabian Sourcing is much more than a Supply chain</h1>
         <img src={supplychain} className="home-about-img"/>
+        <div className="home-products">
+          <h2>Our Products & Solutions</h2>
+          <p>ASL has a wide range of products and solutions to meet your logistics requirements – 
+            everything from <bold>simple shipping and transportation</bold> to <bold>supply chain consultancy </bold>to 
+            transformative solutions that span the supply chain.</p>
+            <div className="home-products-btn">
+              <a href="/about"><Button className="btn">Learn More About Us</Button></a>
+              <a href="/services"><Button className="btn">See our products and solutions</Button></a>
+            </div>
+        </div>
+      </Container>
+
+      {/* cards section showing the process */}
+      <Container>
         <Row>
           <Col md={4} className="home-card">
             <Card className="home-card-view">
               <Card.Body>
-                <RateReviewIcon />
+                <RateReviewIcon className="icon-colour"/>
                 <Card.Title>Planning </Card.Title>
-                <Card.Text style={{ textAlign: "justify" }}>
+                <Card.Text >
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?</p>
                 </Card.Text>
               </Card.Body>
@@ -74,9 +88,9 @@ function Home2() {
           <Col md={4} className="home-card">
             <Card className="home-card-view">
               <Card.Body>
-                <SourceIcon/>
+                <SourceIcon  className="icon-colour"/>
                 <Card.Title>Sourcing</Card.Title>
-                <Card.Text style={{ textAlign: "justify" }}>
+                <Card.Text >
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                      Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo 
                      reprehenderit optio amet ab temporibus asperiores quasi cupiditate.Eligendi non quis Eligendi non quis exercitationem culpa nesciunt nihil autexercitationem culpa nesciunt nihil aut Voluptatum ducimus voluptates voluptas?</p>
@@ -87,9 +101,9 @@ function Home2() {
           <Col md={4} className="home-card">
             <Card className="home-card-view">
               <Card.Body>
-                <FactoryIcon/>
+                <FactoryIcon className="icon-colour"/>
                 <Card.Title>Manufacturing </Card.Title>
-                <Card.Text style={{ textAlign: "justify" }}>
+                <Card.Text >
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil autEligendi non quis exercitationem culpa nesciunt nihil autEligendi non quis exercitationem
                      culpa nesciunt nihil autEligendi non quis exercitationem culpa nesciunt nihil autEligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?</p>
                 </Card.Text>
@@ -138,7 +152,6 @@ function Home2() {
           </Col>
         </Row>
       </Container>
-
 
     </Container>
   );

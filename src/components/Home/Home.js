@@ -19,8 +19,8 @@ function Home() {
                     Getting items delivered to your doorsteps conveniently and safely can become a real headache
                     </h1> 
                     <h4>
-                        Our simple system offers an easy supply chain management plam - each with realistic cost projection, 
-                        a step by step procedure to get your items delivered safely to your door steps and a way to track your items.
+                        Our simple system offers an easy supply chain management plam - each with realistic cost projection,<br/> 
+                        - a step by step procedure to get your items delivered safely to your door steps<br/> - and a way to track your items.
                     </h4>
                     <p>Simplify your life</p>
                     <Button  className="home-buttons">

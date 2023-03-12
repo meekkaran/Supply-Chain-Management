@@ -2,6 +2,8 @@ import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import { Box } from "@mui/system";
+import { AiOutlineTwitter, AiFillFacebook} from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
 import "./about.css";
 import bgQuote  from "../../Assets/air2.jpg";
 import { TextField, Typography } from "@mui/material";
@@ -114,34 +116,40 @@ function About() {
 
         {/* our team section */}
 
-        <Container>
+        <Container className="ourteam">
           <h1>Our Team</h1>
-          <Row>
-            <Col md={4} className="home-card">
-            <Card className="home-card-view">
-              <Card.Body>
-                <FactoryIcon className="icon-colour" style={{ fontSize: "50px" }}/>
-                <Card.Title>OUR MISION </Card.Title>
-                <Card.Text style={{ textAlign: "center" }}>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil autEligendi non quis exercitationem culpa nesciunt nihil autEligendi non quis exercitationem
-                     culpa nesciunt nihil autEligendi non quis exercitationem culpa nesciunt nihil autEligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?</p>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={4} className="home-card">
-            <Card className="home-card-view">
-              <Card.Body>
-                <FactoryIcon className="icon-colour" style={{ fontSize: "50px" }}/>
-                <Card.Title>OUR MISION </Card.Title>
-                <Card.Text style={{ textAlign: "center" }}>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil autEligendi non quis exercitationem culpa nesciunt nihil autEligendi non quis exercitationem
-                     culpa nesciunt nihil autEligendi non quis exercitationem culpa nesciunt nihil autEligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?</p>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          </Row>
+          <div className="teams-container">
+            <div className="teams">
+              <img src="img.png"></img>
+              <div className="name">John Doe</div>
+              <div className="design">Manager</div>
+              <div className="about">jnsdjfnjifndfjivndfjvn  jnjnbgjbn jvj bdjf dfj
+                vnbfjnjfgnbjifnbnbjidxnvjisnvjisnjidvnzjianvidnsdijnfdifhgur
+              v jdnjisfnsjif jdndfjvjidbvjisd vdfji vjidf cajisnc sdji vsdji sdjic 
+              sdji vdiv sdi vsd vdjh vjhnvjfgn</div>
+            
+              <div className="social-links">
+                <a href="#"><AiFillFacebook/></a>
+                <a href="#"><AiOutlineTwitter /></a>
+                <a href="#"><FaLinkedinIn /></a>
+              </div>
+            </div>
+            <div className="teams">
+              <img src="img.png"></img>
+              <div className="name">John Doe</div>
+              <div className="design">Manager</div>
+              <div className="about">jnsdjfnjifndfjivndfjvn  jnjnbgjbn jvj bdjf dfj
+                vnbfjnjfgnbjifnbnbjidxnvjisnvjisnjidvnzjianvidnsdijnfdifhgur
+              v jdnjisfnsjif jdndfjvjidbvjisd vdfji vjidf cajisnc sdji vsdji sdjic 
+              sdji vdiv sdi vsd vdjh vjhnvjfgn</div>
+            
+              <div className="social-links">
+                <a href="#"> <AiFillFacebook/><i className="fa fa-facebook"></i></a>
+                <a href="#"><AiOutlineTwitter /><i className="fa fa-twitter"></i></a>
+                <a href="#"><FaLinkedinIn /><i className="fa fa-linkedIn"></i></a>
+              </div>
+            </div> 
+          </div>
         </Container>
   
       </Container>

@@ -1,6 +1,4 @@
-/* --------- */
-  /* Footer */
-  /* --------- */
+
   .footer {
     background-color: #202020;
     bottom: 0 !important;
@@ -31,6 +29,11 @@
     text-decoration: none;
     font-size: 1.1em;
     color: white !important;
+  }
+  .social-icons {
+    display: inline-block !important;
+    padding-right: 15px;
+    padding-left: 15px;
   }
   @media (max-width: 767px) {
     .footer-copywright {
