@@ -37,10 +37,7 @@
 .about-description{
   padding: 20px;
 }
-.about-description h3{
-  /* padding: 10px; */
-  /* text-align: left; */
-}
+
 .about-description .words{
   padding: 50px !important;
 }
@@ -117,6 +114,7 @@
 .design{
   font-style: italic;
   color: #888;
+  font-size: 20px;
 }
 .about{
   margin: 20px 0;

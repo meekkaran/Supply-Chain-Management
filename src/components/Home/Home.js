@@ -10,8 +10,7 @@ function Home() {
   return (
     <section>
       <Container fluid className="home-section" id="home">
-        <Container className="home-content">
-          
+        <Container className="home-content"> 
           <Row>
             <Col md={7} className="home-header">
                 <div className="heading-name">

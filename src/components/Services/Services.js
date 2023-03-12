@@ -2,6 +2,12 @@ import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import "./services.css";
+import RateReviewIcon from '@mui/icons-material/RateReview';
+import SourceIcon from '@mui/icons-material/Source';
+import FactoryIcon from '@mui/icons-material/Factory';
+import Inventory2Icon from '@mui/icons-material/Inventory2';
+import FlightIcon from '@mui/icons-material/Flight';
+import KeyboardReturnIcon from '@mui/icons-material/KeyboardReturn';
 import image1 from "../../Assets/homeimg1.jpg";
 import image2 from "../../Assets/homeimg2.jpg";
 import image3 from "../../Assets/air3.jpg";
@@ -10,59 +16,142 @@ function Services() {
   return (
     <section>
       <Container fluid className="services-section" id="services">
-        <h1>What we offer</h1>
-        
-      </Container>
-      <Container className="services">
+        <h1>ASL offers a comprehensive portfolio of <br/>services <br/>
+        that help companies drive more value across the enterprise.</h1>
+
+        {/* #types of services offered */}
+        <Container>
+          <Row>
+            <Col md={12} className="services">
+              <img src={image1} component="img" alt="card-img" />
+              <div className="service-content">
+                <h1>SOURCING</h1>
+                <p> We help you choose strategically the right services and goods that a company needs to run their business 
+                 including seller selection, contract negotiation and measuring the long-term performance for out suppliers.
+                </p>
+                <h3>Sourcing has become a commodity.We changed the game</h3>
+                <Button className="service-buttons" href="#" target="_blank">
+                  LEARN MORE
+                </Button>
+              </div>
+            </Col>
+          </Row>
+
+          <Row>
+          <Col md={12} className="services">
+              <img src={image2} component="img" alt="card-img" />
+              <div className="service-content">
+                <h1>LOGISTICS</h1>
+                <p>The process of coordinating and moving resources—people, materials, inventory, and equipment—from 
+                  our location to your desired destination is all dealt with by us. You do not need to vworry about how and when</p>
+                <h3>Sit back, relax, Get your products and services delivered</h3>
+                <Button className="service-buttons" href="#" target="_blank">
+                  LEARN MORE
+                </Button>
+              </div>
+            </Col>
+          </Row>
+
+          <Row>
+          <Col md={12} className="services">
+              <img src={image3} component="img" alt="card-img" />
+              <div className="service-content">
+                <h1>MANAGEMENT SOFTWARE SOLUTIONS</h1>
+                <p>ASL specializes in supply chain IT software and system implementation and customization.  
+                  offers an end-to-end  service offering integrating consulting, software and managed services. 
+                  we cooperate with solution vendors to help companies deploy and deliver software solutions.</p>
+                <h3>Great Software, Happy People</h3>
+                <Button className="service-buttons" href="#" target="_blank">
+                  LEARN MORE
+                </Button>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+
+
+
+
+        {/* <Container>
         <Row>
           <Col md={4} className="home-card">
             <Card className="home-card-view">
-              <Card.Img variant="top" src={image1} component="img" alt="card-img" />
               <Card.Body>
-                <Card.Title>Loddjf </Card.Title>
-                <Card.Text style={{ textAlign: "justify" }}>
+                <RateReviewIcon className="icon-colour"/>
+                <Card.Title>Planning </Card.Title>
+                <Card.Text >
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?</p>
                 </Card.Text>
-                <Button className="home-buttons" href="#" target="_blank">
-                  LEARN MORE
-                </Button>
               </Card.Body>
             </Card>
           </Col>
           <Col md={4} className="home-card">
             <Card className="home-card-view">
-              <Card.Img variant="top" src={image2} component="img" alt="card-img" />
               <Card.Body>
-                <Card.Title>Warehouse Solutions</Card.Title>
-                <Card.Text style={{ textAlign: "justify" }}>
+                <SourceIcon  className="icon-colour"/>
+                <Card.Title>Sourcing</Card.Title>
+                <Card.Text >
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                      Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo 
                      reprehenderit optio amet ab temporibus asperiores quasi cupiditate.Eligendi non quis Eligendi non quis exercitationem culpa nesciunt nihil autexercitationem culpa nesciunt nihil aut Voluptatum ducimus voluptates voluptas?</p>
                 </Card.Text>
-                <Button  className="home-buttons" href="#">
-                  LEARN MORE
-                </Button>
               </Card.Body>
             </Card>
           </Col>
           <Col md={4} className="home-card">
             <Card className="home-card-view">
-              <Card.Img variant="top" src={image3} component="img" alt="card-img" />
               <Card.Body>
-                <Card.Title>Transportation </Card.Title>
-                <Card.Text style={{ textAlign: "justify" }}>
+                <FactoryIcon className="icon-colour"/>
+                <Card.Title>Manufacturing </Card.Title>
+                <Card.Text >
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil autEligendi non quis exercitationem culpa nesciunt nihil autEligendi non quis exercitationem
                      culpa nesciunt nihil autEligendi non quis exercitationem culpa nesciunt nihil autEligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?</p>
                 </Card.Text>
-                <Button  className="home-buttons" href="#">
-                  LEARN MORE
-                </Button>
               </Card.Body>
             </Card>
           </Col>
         </Row>
 
-
+        <Row>
+          <Col md={4} className="home-card">
+            <Card className="home-card-view">
+              
+              <Card.Body>
+                <Inventory2Icon  className="icon-colour"/>
+                <Card.Title>Packaging </Card.Title>
+                <Card.Text style={{ textAlign: "justify" }}>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?</p>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col md={4} className="home-card">
+            <Card className="home-card-view">
+              <Card.Body>
+                <FlightIcon  className="icon-colour"/>
+                <Card.Title>Delivering</Card.Title>
+                <Card.Text style={{ textAlign: "justify" }}>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                     Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo 
+                     reprehenderit optio amet ab temporibus asperiores quasi cupiditate.Eligendi non quis Eligendi non quis exercitationem culpa nesciunt nihil autexercitationem culpa nesciunt nihil aut Voluptatum ducimus voluptates voluptas?</p>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col md={4} className="home-card">
+            <Card className="home-card-view">
+              <Card.Body>
+                <KeyboardReturnIcon  className="icon-colour"/>
+                <Card.Title>Returning </Card.Title>
+                <Card.Text style={{ textAlign: "justify" }}>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil autEligendi non quis exercitationem culpa nesciunt nihil autEligendi non quis exercitationem
+                     culpa nesciunt nihil autEligendi non quis exercitationem culpa nesciunt nihil autEligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?</p>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+      </Container> */}
       </Container>
     </section>
   );

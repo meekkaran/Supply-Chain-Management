@@ -12,12 +12,7 @@ import FollowTheSignsIcon from '@mui/icons-material/FollowTheSigns';
 import AddReactionIcon from '@mui/icons-material/AddReaction';
 import Button from "react-bootstrap/Button";
 import supplychain from "../../Assets/supplychain.png";
-import RateReviewIcon from '@mui/icons-material/RateReview';
-import SourceIcon from '@mui/icons-material/Source';
-import FactoryIcon from '@mui/icons-material/Factory';
-import Inventory2Icon from '@mui/icons-material/Inventory2';
-import FlightIcon from '@mui/icons-material/Flight';
-import KeyboardReturnIcon from '@mui/icons-material/KeyboardReturn';
+import homeLogo from "../../Assets/air4.jpg";
 
 function Home2() {
   return (
@@ -72,7 +67,7 @@ function Home2() {
       </Container>
 
       {/* cards section showing the process */}
-      <Container>
+      {/* <Container>
         <Row>
           <Col md={4} className="home-card">
             <Card className="home-card-view">
@@ -149,6 +144,63 @@ function Home2() {
                 </Card.Text>
               </Card.Body>
             </Card>
+          </Col>
+        </Row>
+      </Container> */}
+
+      {/* #the four steps */}
+      <Container className="home-steps">
+        <Row>
+          <Col md={12} className="">
+            <div className="card">
+              
+              <div>
+                  <h3>PLANNING</h3>
+                  <p>We help you accurately plan the journey of your items upto delivery. This helps streamline operations, 
+                    enhance efficiency, avoid delays and bring down operating costs. <br/>
+                    Our planning strategies have proven to reduce costs associated with several processes, including purchasing, 
+                    production, inventory management and logistics by 40%. 
+                  </p>
+              </div>
+              <img src={homeLogo} alt=""/>
+          </div>
+          </Col>
+          <Col md={12} className="">
+            <div className="card">
+              <img src={homeLogo} alt=""/>
+              <div>
+                  <h3>SOURCING</h3>
+                  <p>ASL helps businesses and  established companies find and manage the most reliable & qualified overseas suppliers 
+                    for their core products.<br/><br/>
+                    This means that dealing with the suppliers is Fully on our end and any uncertainities on the supply side is fully taken care of.
+                  </p>
+              </div>
+              
+          </div>
+          </Col>
+          <Col md={12} className="">
+            <div className="card">
+              
+              <div>
+                  <h3>PACKAGING</h3>
+                  <p> - We Organize your products well.<br/> - Measure them to make sure you get the desired ordered quantity/size. <br/>
+                     - Select the best products for our customers making sure they are sealed and protected.<br/>
+                    This protects products from damage and allows for their efficient distribution
+                  </p>
+              </div>
+              <img src={homeLogo} alt=""/>
+          </div>
+          </Col>
+          <Col md={12} className="">
+            <div className="card">
+              <img src={homeLogo} alt=""/>
+              <div>
+                  <h3>DELIVERY</h3>
+                  <p>We make sure we get our customers what they need—in the right amount and at the right time
+                  </p>
+              </div>
+              
+          </div>
           </Col>
         </Row>
       </Container>

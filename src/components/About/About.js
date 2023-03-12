@@ -80,7 +80,10 @@ function About() {
                 <Card.Img variant="top" src={bgQuote} alt="card-img" />
                 <Card.Title>OUR PRODUCTS </Card.Title>
                 <Card.Text style={{ textAlign: "center" }}>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?</p>
+                  <p>We have specialised in the importation of fresh fruits and vegetables from Kenyan 
+                    farmers to the varied markets of the middle east through Dubai. Be it supplying avocados, 
+                    passion fruits, mangoes or baby kale, Arabian sourcing has the requisite expertise for a seamless link from farm to fork.
+                  </p>
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -122,11 +125,14 @@ function About() {
             <div className="teams">
               <img src="img.png"></img>
               <div className="name">John Doe</div>
-              <div className="design">Manager</div>
-              <div className="about">jnsdjfnjifndfjivndfjvn  jnjnbgjbn jvj bdjf dfj
-                vnbfjnjfgnbjifnbnbjidxnvjisnvjisnjidvnzjianvidnsdijnfdifhgur
-              v jdnjisfnsjif jdndfjvjidbvjisd vdfji vjidf cajisnc sdji vsdji sdjic 
-              sdji vdiv sdi vsd vdjh vjhnvjfgn</div>
+              <div className="design">C.E.O</div>
+              <div className="about">o is the CEO of Arabian sourcing.He has leveraged
+                his many years of travel as an international airline pilot to forge networks in
+                various markets within Africa to build a portfolio of reliable suppliers. As managing
+                director of agricom holdings in Kenya, a local supply chain management company
+                serving international corporates like Daigeo and DHL, he has invaluable experience
+                managing the fluidity of supply chain networks
+              </div>
             
               <div className="social-links">
                 <a href="#"><AiFillFacebook/></a>
@@ -138,10 +144,13 @@ function About() {
               <img src="img.png"></img>
               <div className="name">John Doe</div>
               <div className="design">Manager</div>
-              <div className="about">jnsdjfnjifndfjivndfjvn  jnjnbgjbn jvj bdjf dfj
-                vnbfjnjfgnbjifnbnbjidxnvjisnvjisnjidvnzjianvidnsdijnfdifhgur
-              v jdnjisfnsjif jdndfjvjidbvjisd vdfji vjidf cajisnc sdji vsdji sdjic 
-              sdji vdiv sdi vsd vdjh vjhnvjfgn</div>
+              <div className="about">o is the CEO of Arabian sourcing.He has leveraged
+                his many years of travel as an international airline pilot to forge networks in
+                various markets within Africa to build a portfolio of reliable suppliers. As managing
+                director of agricom holdings in Kenya, a local supply chain management company
+                serving international corporates like Daigeo and DHL, he has invaluable experience
+                managing the fluidity of supply chain networks
+              </div>
             
               <div className="social-links">
                 <a href="#"> <AiFillFacebook/><i className="fa fa-facebook"></i></a>
