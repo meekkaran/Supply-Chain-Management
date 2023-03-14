@@ -1,8 +1,102 @@
+/* popup section */
 
-  .home-header {
-    padding-top: 20px !important;
-  }
+.quote-section {
+  /* position: relative !important; */
+  padding-top:  150px !important;
+  padding-bottom: 50px !important;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.home-header .popup{
+  position: absolute;
+  padding: 30px;
+  max-width: 700px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  margin:0 auto;
+  border-radius: 3px;
+  box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+  top: 20%;
+  left: 30%; 
+  /* transform: translate(50%, 50%); */
+}
+.home-header .overlay{
+  width: 100vw;
+  height:100vh;
+  top:0;
+  left:0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  background: rgba(49,49,49,0.8);
+}
+
+.popup .close-btn{
+  position: absolute;
+  background: #888;
+  color: #000;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 20px;
+  line-height: 20px;
   
+}
+
+.field{
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin-bottom: 22px;
+  background-color: rgba(230,230,230,0.6);
+  font-size: 1.1em;
+  outline: none;
+  border: 2px solid rgba(0,0,0,0);
+  transition: .3s;
+}
+.field:hover{
+  background-color: rgba(0,0,0,0.1);
+}
+.field:focus{
+  background-color: #fff;
+  border: 2px solid rgba(30, 85, 250, 0.47);
+}
+.form h2{
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  color: #000;
+  float: left;
+}
+.area{
+  max-height: 150px;
+}
+
+.form .btn{
+  width:100%;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  background-color: #2ecc71;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transition: .3s;
+  color:#fff;
+}
+.form .btn:hover{
+  background-color: #27ae60;
+}
+
+/* end of modal popup */
+
+
+/* home.js page css */
   .home-section {
     position: relative;
     background-image: var(--image-gradient), url(../../Assets/air1.jpg);
@@ -21,7 +115,7 @@
     text-align: left;
   }
   .home-content .home-buttons{
-    background-color: #d4af37;
+    background-color: #e0aa3e;
   }
   
   .heading {
@@ -46,6 +140,7 @@
     padding-bottom: 20px !important;
     text-align: center;
   }
+
   .home-about {
     position: relative;
     padding-bottom: 70px !important;
@@ -57,6 +152,11 @@
     border-radius: 10px;
     padding-bottom: 50px;
   } 
+
+  /* home products section */
+.home-products-section{
+  padding:50px;
+}
   .home-products{
     width: 80%;
     padding: 50px;
@@ -72,7 +172,7 @@
   }
   .home-products-btn .btn{
     margin-right: 10px;
-    background-color: #d4af37 !important;
+    background-color: #e0aa3e !important;
     border: 0 !important;
     padding: 13px;
     font-size: 1.1em;
@@ -80,7 +180,6 @@
 
 
   /* home card section */
-
   .home-card {
     padding-top: 50px !important;
     padding-bottom: 50px !important;
@@ -98,14 +197,14 @@
     height: 100% !important;
   }
 
-  .icon-colour {
-    color: #d4af37  !important;
+.icon-colour {
+    color: #e0aa3e  !important;
     font-size: 50px !important;
     text-align: left !important;
   }
 
 .home-content .home-buttons{
-    background-color: #d4af37 !important;
+    background-color: #e0aa3e !important;
     border: 0 !important;
     padding: 10px;
     font-size: 0.5em;

@@ -20,7 +20,7 @@
   padding-right: 2rem;
 }
 .contact-heading h2{
-  color:#d4af37;
+  color:#e0aa3e;
   font-size: 2rem;
   font-weight: 600;
   letter-spacing: 2px;
@@ -33,7 +33,7 @@
   content: '';
   width:70px;
   height:2px;
-  background: #d4af37;
+  background: #e0aa3e;
 }
 .contact-heading h2::after{
   position:absolute;
@@ -42,7 +42,7 @@
   content: '';
   width:70px;
   height:2px;
-  background: #d4af37;
+  background: #e0aa3e;
 }
 .container{
   max-width: 1170px;
@@ -68,7 +68,7 @@
 .icon{
   height: 60px;
   width:60px;
-  background: #d4af37;
+  background: #e0aa3e;
   border-radius:50%;
   line-height: 60px;
   text-align: center;
@@ -137,7 +137,7 @@ form button{
 .site-btn{
   border: none;
   display: inline-block;
-  background: #d4af37;
+  background: #e0aa3e;
   color:#000;
   font-size: 14px;
   font-weight: 500;

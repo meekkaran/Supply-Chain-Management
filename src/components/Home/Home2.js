@@ -17,43 +17,116 @@ import homeLogo from "../../Assets/air4.jpg";
 function Home2() {
   return (
     <Container fluid className="home-about-section">
+
+      
+      {/* cards section showing the process */}
       <Container>
+      <h1 style={{ textAlign: "center" }}>How We Work</h1>
         <Row>
-          <h1 style={{ textAlign: "center" }}>How We Work</h1>
-          <Col md={3} className="home-about-description">
-            <div className="">
-              <FindInPageIcon className="icon-colour" style={{ fontSize: "40px" }}/>
-              <h3>Choose A service</h3>
-              <p>Select the best supply method that best meets your budget and needs</p>
-            </div>
+          <Col md={3} className="home-card">
+            <Card className="home-card-view">
+              <Card.Body>
+                <FindInPageIcon className="icon-colour" style={{ fontSize: "40px" }}/>
+                <Card.Title>Choose A service </Card.Title>
+                <Card.Text >
+                  <p>Select the best supply method that best meets your budget and needs</p>
+                </Card.Text>
+              </Card.Body>
+            </Card>
           </Col>
-          <Col md={3} className="home-about-description">
-            <div className="">
-              <RequestQuoteIcon className="icon-colour" style={{ fontSize: "40px" }}/>
-              <h3>Get A Quote</h3>
-              <p>Select the best supply method that best meets your budget and needs</p>
-            </div>
+          <Col md={3} className="home-card">
+            <Card className="home-card-view">
+              <Card.Body>
+                <RequestQuoteIcon className="icon-colour" style={{ fontSize: "40px" }}/>
+                <Card.Title>Get A Quote</Card.Title>
+                <Card.Text >
+                  <p>Select the best supply method that best meets your budget and needs</p>
+                </Card.Text>
+              </Card.Body>
+            </Card>
           </Col>
-          <Col md={3} className="home-about-description">
-            <div className="">
-              <FollowTheSignsIcon className="icon-colour" style={{ fontSize: "40px" }}/>
-              <h3>Track Your Product</h3>
-              <p>Select the best supply method that best meets your budget and needs</p>
-            </div>
+          <Col md={3} className="home-card">
+            <Card className="home-card-view">
+              <Card.Body>
+                <FollowTheSignsIcon className="icon-colour" style={{ fontSize: "40px" }}/>
+                <Card.Title>Track your product </Card.Title>
+                <Card.Text >
+                  <p>Select the best supply method that best meets your budget and needs</p>
+                </Card.Text>
+              </Card.Body>
+            </Card>
           </Col>
-          <Col md={3} className="home-about-description">
-            <div className="">
-              <AddReactionIcon className="icon-colour" style={{ fontSize: "40px" }}/>
-              <h3>Receive Your Package</h3>
-              <p>Get your package delivered fully.</p>
-            </div>
+          <Col md={3} className="home-card">
+            <Card className="home-card-view">
+              
+              <Card.Body>
+                <AddReactionIcon className="icon-colour" style={{ fontSize: "40px" }}/>
+                <Card.Title>Receive your package </Card.Title>
+                <Card.Text style={{ textAlign: "justify" }}>
+                  <p>Get your package delivered to you safely</p>
+                </Card.Text>
+              </Card.Body>
+            </Card>
           </Col>
         </Row>
       </Container>
 
+      {/* home about section */}
       <Container className="home-about">
-        <h1>Arabian Sourcing is much more than a Supply chain</h1>
-        <img src={supplychain} className="home-about-img"/>
+        <Row>
+          <Col md={12}>
+          <h1>Arabian Sourcing is much more than a Supply chain</h1>
+          <img src={supplychain} className="home-about-img"/>
+          </Col>
+        </Row>
+
+        <Row>
+            <Col md={4}>
+              <img src={homeLogo} alt="home pic" className="img-fluid" style={{ maxHeight: "450px" }}/>
+            </Col>
+
+            <Col md={8}>
+              <Row>
+              <Col md={4}>
+                <div>
+                  <p>Get advisory services on your products including production planning, demand estimation, procurement planning,
+                     inventory management control and design</p>
+                </div>
+              </Col>
+              <Col md={4}>
+                <div>
+                  <p>Get variety of services from us. From the sourcing of agricultural products to implementation and distribution of software solutions </p>
+                </div>
+              </Col>
+              <Col md={4}>
+                <div>
+                  <p>Do you need supply chain IT software and system implementation and customization services? Worry no more. ASL has specialised in that</p>
+                </div>
+              </Col>
+              </Row>
+
+              <Row>
+              <Col md={4}>
+                <div>
+                  <p>Ask for a quotation,Compare quotes right from your phone and If you are satisfied, simply continue to have your goods delivered.</p>
+                </div></Col>
+              <Col md={4}>
+                <div>
+                  <p>All you need to do is choose a servive that you want, and all the planning, 
+                    estimation and the supply-side uncertainties and product risks are reliably taken care of by us</p>
+                </div>
+              </Col>
+              <Col md={4}>
+                <div>
+                  <p>Join a community of vendors buyers and distributors just like you!</p>
+                </div>
+              </Col>
+              </Row>
+            </Col>
+        </Row>
+        
+        {/* home-products section */}
+        <Container className="home-products-section">
         <div className="home-products">
           <h2>Our Products & Solutions</h2>
           <p>ASL has a wide range of products and solutions to meet your logistics requirements – 
@@ -64,89 +137,11 @@ function Home2() {
               <a href="/services"><Button className="btn">See our products and solutions</Button></a>
             </div>
         </div>
+        </Container>
+
       </Container>
 
-      {/* cards section showing the process */}
-      {/* <Container>
-        <Row>
-          <Col md={4} className="home-card">
-            <Card className="home-card-view">
-              <Card.Body>
-                <RateReviewIcon className="icon-colour"/>
-                <Card.Title>Planning </Card.Title>
-                <Card.Text >
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?</p>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={4} className="home-card">
-            <Card className="home-card-view">
-              <Card.Body>
-                <SourceIcon  className="icon-colour"/>
-                <Card.Title>Sourcing</Card.Title>
-                <Card.Text >
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                     Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo 
-                     reprehenderit optio amet ab temporibus asperiores quasi cupiditate.Eligendi non quis Eligendi non quis exercitationem culpa nesciunt nihil autexercitationem culpa nesciunt nihil aut Voluptatum ducimus voluptates voluptas?</p>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={4} className="home-card">
-            <Card className="home-card-view">
-              <Card.Body>
-                <FactoryIcon className="icon-colour"/>
-                <Card.Title>Manufacturing </Card.Title>
-                <Card.Text >
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil autEligendi non quis exercitationem culpa nesciunt nihil autEligendi non quis exercitationem
-                     culpa nesciunt nihil autEligendi non quis exercitationem culpa nesciunt nihil autEligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?</p>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
-
-        <Row>
-          <Col md={4} className="home-card">
-            <Card className="home-card-view">
-              
-              <Card.Body>
-                <Inventory2Icon  className="icon-colour"/>
-                <Card.Title>Packaging </Card.Title>
-                <Card.Text style={{ textAlign: "justify" }}>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?</p>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={4} className="home-card">
-            <Card className="home-card-view">
-              <Card.Body>
-                <FlightIcon  className="icon-colour"/>
-                <Card.Title>Delivering</Card.Title>
-                <Card.Text style={{ textAlign: "justify" }}>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                     Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo 
-                     reprehenderit optio amet ab temporibus asperiores quasi cupiditate.Eligendi non quis Eligendi non quis exercitationem culpa nesciunt nihil autexercitationem culpa nesciunt nihil aut Voluptatum ducimus voluptates voluptas?</p>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={4} className="home-card">
-            <Card className="home-card-view">
-              <Card.Body>
-                <KeyboardReturnIcon  className="icon-colour"/>
-                <Card.Title>Returning </Card.Title>
-                <Card.Text style={{ textAlign: "justify" }}>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil autEligendi non quis exercitationem culpa nesciunt nihil autEligendi non quis exercitationem
-                     culpa nesciunt nihil autEligendi non quis exercitationem culpa nesciunt nihil autEligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?</p>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
-      </Container> */}
+      
 
       {/* #the four steps */}
       <Container className="home-steps">

@@ -72,14 +72,14 @@ function NavBar() {
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link as={Link} to="/quote" onClick={() => updateExpanded(false)}>
-                  Get  quote
+              <Nav.Link as={Link} to="/contact" onClick={() => updateExpanded(false)}>
+                 Contact Us
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link as={Link} to="/contact" onClick={() => updateExpanded(false)}>
-                 Contact Us
+              <Nav.Link as={Link} to="/quote" onClick={() => updateExpanded(false)}>
+                  Get  quote
               </Nav.Link>
             </Nav.Item>
 

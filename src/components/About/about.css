@@ -19,7 +19,7 @@
 .about-first hr{
   width: 500px;
   height: 5px;
-  background-color: yellow;
+  background-color: #e0aa3e;
   margin: 0 auto;
   border: none;
   text-align: center;
@@ -27,7 +27,7 @@
 .about-description hr{
   width: 100px;
   height: 5px;
-  background-color: yellow;
+  background-color: #e0aa3e;
   margin: 0 auto;
   border: none;
   align-items: left;
@@ -129,7 +129,7 @@
 }
 .social-links a{
   display: inline-block;
-  color: #d4af37;
+  color: #e0aa3e;
   font-size: 1.4em;
   margin-right: 5px;
 }
