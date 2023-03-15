@@ -10,9 +10,16 @@ import FindInPageIcon from '@mui/icons-material/FindInPage';
 import RequestQuoteIcon from '@mui/icons-material/RequestQuote';
 import FollowTheSignsIcon from '@mui/icons-material/FollowTheSigns';
 import AddReactionIcon from '@mui/icons-material/AddReaction';
+import DoneIcon from '@mui/icons-material/Done';
 import Button from "react-bootstrap/Button";
 import supplychain from "../../Assets/supplychain.png";
 import homeLogo from "../../Assets/air4.jpg";
+import websiteBg from "../../Assets/websiteBg.jpg";
+import personPhone from "../../Assets/personPhone.jpg";
+import peoplehand from "../../Assets/peoplehand.jpg";
+import delivery from "../../Assets/delivery.jpg";
+import packaging from "../../Assets/packaging.jpg";
+import sourcing from "../../Assets/sourcing.jpg";
 
 function Home2() {
   return (
@@ -76,53 +83,62 @@ function Home2() {
         <Row>
           <Col md={12}>
           <h1>Arabian Sourcing is much more than a Supply chain</h1>
-          <img src={supplychain} className="home-about-img"/>
+          <img src={websiteBg} className="home-about-img"/>
           </Col>
         </Row>
 
         <Row>
+          <Col md={4} className="home-about-details">
+            <img src={personPhone} alt="home pic"/>
+          </Col>
+
+          <Col md={8} className="home-about-details">
+            <Row>
             <Col md={4}>
-              <img src={homeLogo} alt="home pic" className="img-fluid" style={{ maxHeight: "450px" }}/>
+              <div className="details">
+                <DoneIcon className="details-icon"/>
+                <p>Get advisory services on your products including production planning, demand estimation, procurement planning,
+                    inventory management control and design</p>
+              </div>
             </Col>
-
-            <Col md={8}>
-              <Row>
-              <Col md={4}>
-                <div>
-                  <p>Get advisory services on your products including production planning, demand estimation, procurement planning,
-                     inventory management control and design</p>
-                </div>
-              </Col>
-              <Col md={4}>
-                <div>
-                  <p>Get variety of services from us. From the sourcing of agricultural products to implementation and distribution of software solutions </p>
-                </div>
-              </Col>
-              <Col md={4}>
-                <div>
-                  <p>Do you need supply chain IT software and system implementation and customization services? Worry no more. ASL has specialised in that</p>
-                </div>
-              </Col>
-              </Row>
-
-              <Row>
-              <Col md={4}>
-                <div>
-                  <p>Ask for a quotation,Compare quotes right from your phone and If you are satisfied, simply continue to have your goods delivered.</p>
-                </div></Col>
-              <Col md={4}>
-                <div>
-                  <p>All you need to do is choose a servive that you want, and all the planning, 
-                    estimation and the supply-side uncertainties and product risks are reliably taken care of by us</p>
-                </div>
-              </Col>
-              <Col md={4}>
-                <div>
-                  <p>Join a community of vendors buyers and distributors just like you!</p>
-                </div>
-              </Col>
-              </Row>
+            <Col md={4}>
+              <div className="details">
+                <DoneIcon className="details-icon"/>
+                <p>Get variety of services from us. From the sourcing of agricultural products to implementation and distribution
+                   of software solutions </p>
+              </div>
             </Col>
+            <Col md={4}>
+              <div className="details">
+                <DoneIcon className="details-icon"/>
+                <p>Do you need supply chain IT software and system implementation and customization services? Worry no more.
+                   ASL has specialised in that</p>
+              </div>
+            </Col>
+            </Row>
+            <Row>
+            <Col md={4}>
+              <div className="details">
+                <DoneIcon className="details-icon"/>
+                <p>Ask for a quotation, compare quotes right from your phone and If you are satisfied, simply continue to have your
+                   goods delivered.</p>
+              </div>
+            </Col>
+            <Col md={4}>
+              <div className="details">
+                <DoneIcon className="details-icon"/>
+                <p>All you need to do is choose a servive that you want. all the planning, 
+                  estimation, supply-side uncertainties and product risks are reliably taken care of by us</p>
+              </div>
+            </Col>
+            <Col md={4}>
+              <div className="details">
+                <DoneIcon className="details-icon"/>
+                <p>Join a community of vendors buyers and distributors just like you!</p>
+              </div>
+            </Col>
+            </Row>
+          </Col>
         </Row>
         
         {/* home-products section */}
@@ -157,12 +173,12 @@ function Home2() {
                     production, inventory management and logistics by 40%. 
                   </p>
               </div>
-              <img src={homeLogo} alt=""/>
+              <img src={peoplehand} alt=""/>
           </div>
           </Col>
           <Col md={12} className="">
             <div className="card">
-              <img src={homeLogo} alt=""/>
+              <img src={sourcing} alt=""/>
               <div>
                   <h3>SOURCING</h3>
                   <p>ASL helps businesses and  established companies find and manage the most reliable & qualified overseas suppliers 
@@ -183,12 +199,12 @@ function Home2() {
                     This protects products from damage and allows for their efficient distribution
                   </p>
               </div>
-              <img src={homeLogo} alt=""/>
+              <img src={packaging} alt=""/>
           </div>
           </Col>
           <Col md={12} className="">
             <div className="card">
-              <img src={homeLogo} alt=""/>
+              <img src={delivery} alt=""/>
               <div>
                   <h3>DELIVERY</h3>
                   <p>We make sure we get our customers what they need—in the right amount and at the right time
