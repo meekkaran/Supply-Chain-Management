@@ -8,8 +8,6 @@
     background-image: var(--section-background-color) !important;
   }
 .contact{
-  border: 1px solid #d9ddcd;
-  border-radius: 5px;
   padding:10px;
 }
 .contact-heading{
@@ -100,7 +98,7 @@
 }
 .contact-form{
   text-align: center;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 form{
   display: block;
@@ -145,12 +143,4 @@ form button{
   text-transform: uppercase;
   border-radius: 50px;
   padding: 12px 40px 10px;
-}
-.map-column{
-  flex: 0 0 auto;
-  width: 100%;
-  padding-top: 10px;
-}
-.contact-map iframe{
-  width:100%;
 }

@@ -78,7 +78,7 @@ function NavBar() {
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link as={Link} to="/quote" onClick={() => updateExpanded(false)}>
+              <Nav.Link className="quote" as={Link} to="/quote" onClick={() => updateExpanded(false)}>
                   Get  quote
               </Nav.Link>
             </Nav.Item>

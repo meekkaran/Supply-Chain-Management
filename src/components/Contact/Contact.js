@@ -13,7 +13,7 @@ function Contact() {
         <h1>Got a question?</h1>
         <p>Leave us a message below and we'll get in touch with you as soon as we can.</p>
         
-      </Container>
+      
       <Container className="contact">
         <div className="contact-heading">
           <h2>Contact Us</h2>
@@ -74,21 +74,8 @@ function Contact() {
           </div>
           </Row>
 
-          <div className ="row">
-            <div className="map-column">
-              <div className="contact-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.1209216733914!2d-0.1264290688369983!3d51.52934191451319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b3b70171395%3A0x18905479de0fdb25!2sThe%20British%20Library!5e0!3m2!1sen!2ske!4v1676483235431!5m2!1sen!2ske" 
-                  width="600" 
-                  height="450" 
-                  style={{border:0}} 
-                  allowfullscreen="" 
-                  loading="lazy" 
-                  referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-              </div>
-            </div>
-          </div>
         </div>
+      </Container>
       </Container>
     </section>
   );

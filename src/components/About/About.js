@@ -12,6 +12,9 @@ import RateReviewIcon from '@mui/icons-material/RateReview';
 import SourceIcon from '@mui/icons-material/Source';
 import FactoryIcon from '@mui/icons-material/Factory';
 import homeLogo from "../../Assets/air4.jpg";
+import aboutASL from "../../Assets/aboutASL.jpg";
+import twomensmile from "../../Assets/twomensmile.jpg";
+
 
 function About() {
   return (
@@ -19,12 +22,42 @@ function About() {
       <Container fluid className="about-section" id="about">
         
         <Container fluid className="about-first">
+           <img src={aboutASL} alt="home pic" className="about-img" />
+        </Container>
+
+        <Container className="about-second">
+          <Row>
+            <Col md={12}>
+              <div className="description">
+                <h1>THE RIGHT DECISION FOR YOUR BUSINESS</h1>
+                <h4>We toil diligently to deliver value to all parties in our supply chain from the producer to the end consumer.</h4>
+              </div>
+            </Col>
+          </Row>
+          <Row className="descriptions">
+            <h1>Our Story</h1><h4/>
+            <Col md={6} className="words">
+              <img src={twomensmile} alt="home pic" />
+            </Col>
+            <Col md={6} className="words">
+              <p>ASL is a leading supply chain management company offering sourcing teams resilient and sustainable solutions 
+                  to reliably bring products to market.<br/><br/> We offer unbeatable technical knowledge in various fields from the sourcing 
+                  of agricultural products to the implementation and distribution of software solutions through our seamless operations 
+                  and outstanding technical expertise. 
+                  <br/><br/>
+                  With years of technical experience in the African marketplace and an expertly and 
+                  carefully curated partnership with industry stakeholders, your project is guaranteed success with us.</p>
+            </Col>
+          </Row>
+        </Container>
+
+        {/* <Container>
           <h1>About Arabian Sourcing Limited</h1>
           <hr/>
           <Row>
             <Col md={5} className="about-description">
                   <img
-                  src={homeLogo}
+                  src={aboutASL}
                   alt="home pic"
                   className="about-img"
                   // style={{ height: "100%" }}
@@ -69,17 +102,18 @@ function About() {
               </div>
             </Col>
           </Row>
-        </Container>
+        </Container> */}
         
         {/* vision mission section */}
         <Container>
-        <h2>We toil diligently to deliver value to all parties in our supply chain from the producer to the end consumer.</h2>
+        <h2>A distribution so desirable and reliable.</h2>
+        <h5>We love what we do</h5>
         <Row>
         <Col md={4} className="home-card">
             <Card className="home-card-view">
               <Card.Body>
                 <Card.Img variant="top" src={bgQuote} alt="card-img" />
-                <Card.Title>OUR PRODUCTS </Card.Title>
+                <Card.Title style={{ padding: "20px" }}>OUR PRODUCTS </Card.Title>
                 <Card.Text style={{ textAlign: "center" }}>
                   <p>We have specialised in the importation of fresh fruits and vegetables from Kenyan 
                     farmers to the varied markets of the middle east through Dubai. Be it supplying avocados, 
@@ -94,7 +128,7 @@ function About() {
             <Card className="home-card-view">
               <Card.Body>
                 <Card.Img variant="top" src={bgQuote} alt="card-img" />
-                <Card.Title>OUR VISION </Card.Title>
+                <Card.Title style={{ padding: "20px" }}>OUR VISION </Card.Title>
                 <Card.Text style={{ textAlign: "center" }}>
                   <p>It is our commitment to remove bottlenecks that hinder market access for our producers in the
                     African continent from reaching their desired markets by being the supply chain partner of choice</p>
@@ -107,7 +141,7 @@ function About() {
             <Card className="home-card-view">
               <Card.Body>
                 <Card.Img variant="top" src={bgQuote} alt="card-img" />
-                <Card.Title>OUR MISION </Card.Title>
+                <Card.Title style={{ padding: "20px" }}>OUR MISION </Card.Title>
                 <Card.Text style={{ textAlign: "center" }}>
                   <p>To be the supply chain partner of choice for our partners by offering a seamless link for  
                     African producers to the world markets through our hub in Dubai</p>
@@ -121,45 +155,49 @@ function About() {
         {/* our team section */}
 
         <Container className="ourteam">
-          <h1>Our Team</h1>
-          <div className="teams-container">
-            <div className="teams">
-              <img src="img.png"></img>
-              <div className="name">John Doe</div>
-              <div className="design">C.E.O</div>
-              <div className="about">o is the CEO of Arabian sourcing.He has leveraged
-                his many years of travel as an international airline pilot to forge networks in
-                various markets within Africa to build a portfolio of reliable suppliers. As managing
-                director of agricom holdings in Kenya, a local supply chain management company
-                serving international corporates like Daigeo and DHL, he has invaluable experience
-                managing the fluidity of supply chain networks
+          <Row className="teams-container">
+            <h1>Our Team</h1>
+            <Col md={6}>
+              <div className="teams">
+                <img src="img.png"></img>
+                <div className="name">Ngarutua Njeru Kimotho</div>
+                <div className="design">C.E.O</div>
+                <div className="about">Ngarutua is the CEO of Arabian sourcing.He has leveraged
+                  his many years of travel as an international airline pilot to forge networks in
+                  various markets within Africa to build a portfolio of reliable suppliers.<br/> As managing
+                  director of agricom holdings in Kenya, a local supply chain management company
+                  serving international corporates like Daigeo and DHL, he has invaluable experience
+                  managing the fluidity of supply chain networks
+                </div>
+              
+                <div className="social-links">
+                  <a href="#"><AiFillFacebook/></a>
+                  <a href="#"><AiOutlineTwitter /></a>
+                  <a href="#"><FaLinkedinIn /></a>
+                </div>
               </div>
-            
-              <div className="social-links">
-                <a href="#"><AiFillFacebook/></a>
-                <a href="#"><AiOutlineTwitter /></a>
-                <a href="#"><FaLinkedinIn /></a>
-              </div>
-            </div>
-            <div className="teams">
-              <img src="img.png"></img>
-              <div className="name">John Doe</div>
-              <div className="design">Manager</div>
-              <div className="about">o is the CEO of Arabian sourcing.He has leveraged
-                his many years of travel as an international airline pilot to forge networks in
-                various markets within Africa to build a portfolio of reliable suppliers. As managing
-                director of agricom holdings in Kenya, a local supply chain management company
-                serving international corporates like Daigeo and DHL, he has invaluable experience
-                managing the fluidity of supply chain networks
-              </div>
-            
-              <div className="social-links">
-                <a href="#"> <AiFillFacebook/><i className="fa fa-facebook"></i></a>
-                <a href="#"><AiOutlineTwitter /><i className="fa fa-twitter"></i></a>
-                <a href="#"><FaLinkedinIn /><i className="fa fa-linkedIn"></i></a>
-              </div>
-            </div> 
-          </div>
+            </Col>
+            <Col md={6}>
+              <div className="teams">
+                <img src="img.png"></img>
+                <div className="name">Ann Kimotho</div>
+                <div className="design">Assistant Managing Director</div>
+                <div className="about">o is the CEO of Arabian sourcing.He has leveraged
+                  his many years of travel as an international airline pilot to forge networks in
+                  various markets within Africa to build a portfolio of reliable suppliers. As managing
+                  director of agricom holdings in Kenya, a local supply chain management company
+                  serving international corporates like Daigeo and DHL, he has invaluable experience
+                  managing the fluidity of supply chain networks
+                </div>
+              
+                <div className="social-links">
+                  <a href="#"> <AiFillFacebook/><i className="fa fa-facebook"></i></a>
+                  <a href="#"><AiOutlineTwitter /><i className="fa fa-twitter"></i></a>
+                  <a href="#"><FaLinkedinIn /><i className="fa fa-linkedIn"></i></a>
+                </div>
+              </div> 
+            </Col>
+          </Row>
         </Container>
   
       </Container>

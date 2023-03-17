@@ -1,15 +1,8 @@
-/* popup section */
-
-.quote-section {
-  /* position: relative !important; */
-  padding-top:  150px !important;
-  padding-bottom: 50px !important;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
+* {
+  border-radius: 0 !important;
 }
-.popup{
+
+.home-header .popup{
   position: absolute;
   padding: 30px;
   max-width: 700px;
@@ -24,7 +17,7 @@
   top: 20%;
   left: 30%; 
 }
-.overlay{
+.home-header .overlay{
   width: 100vw;
   height:100vh;
   top:0;
@@ -47,9 +40,7 @@
   font-weight: bold;
   border-radius: 20px;
   line-height: 20px;
-  
 }
-
 .field{
   width: 100%;
   padding: 0.5rem 1rem;
@@ -97,28 +88,26 @@
 
 /* home.js page css */
   .home-section {
-    position: relative; 
-    padding-bottom: 30px !important;
-    padding-top: 30px !important;
+     position: relative !important;
+     padding-top:  150px !important;
+     padding-bottom: 50px !important;
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
   }
-  .home-section img{
-    filter: brightness(50%);
-    width: 100%;
-    height: auto;
-  }
-
   .home-content {
-    padding: 0px !important;
     text-align: left;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
   
-  .home-content .home-buttons{
+.home-content .home-buttons{
     background-color: #e0aa3e;
-  }
+
+}
+.home-content h4{
+  border-bottom: 5px solid #e0aa3e;
+  padding-bottom: 10px;
+  width: 450px;
+}
   
   .heading {
     font-size: 2.4em !important;
@@ -136,34 +125,51 @@
     padding-bottom: 70px !important;
     padding-top: 70px !important;
   }
-  
-  .home-about-description {
-    padding-top: 100px !important;
-    padding-bottom: 20px !important;
-    text-align: center;
+  .home-about-section .header{
+    background-color: #f1f1f1;
+    color: #000;
+    padding: 50px;
   }
-
   .home-about {
     position: relative;
     padding-bottom: 70px !important;
     padding-top: 70px !important;
   }
   .home-about h1{
-    padding: 20px;
+    padding: 10px;
+    color: #e0aa3e;
+  }
+  .home-about h5{
+    padding: 10px;
   }
   .home-about-img{
     width: 80%;
     height: 600px;
     border-radius: 20px !important;
     margin-bottom: 50px;
+    filter: brightness(80%)
   } 
-  .home-about-details img{
-    height: auto;
-  }
+.home-about .home-about-row{
+  padding: 50px;
+}
+
+.home-about-row{
+  background-color: #f1f1f1;
+  color: #000;
+}
+
+.home-about-row .home-about-details img{
+    height: 450px;
+}
   .details{
     display: flex;
     align-items: center;
     padding: 10px;
+  }
+  .details .part1 {
+    background-color: #e0aa3e;
+    padding: 5px;
+    border-radius: 2px;
   }
   .details .details-icon{
     color: #e0aa3e;
@@ -177,43 +183,17 @@
     display: inline-block;
   }
 
-  /* home products section */
-.home-products-section{
-  padding:50px;
-}
-  .home-products{
-    width: 80%;
-    padding: 50px;
-    background: #6a6969;
-    margin:0 auto
-  }
-  .home-products p{
-    font-size: 20px;
-  }
-  .home-products .home-products-btn{
-    padding: 30px;
-    
-  }
-  .home-products-btn .btn{
-    margin-right: 10px;
-    background-color: #e0aa3e !important;
-    border: 0 !important;
-    padding: 13px;
-    font-size: 1.1em;
-  }
-
-
   /* home card section */
   .home-card {
     padding-top: 50px !important;
     padding-bottom: 50px !important;
     padding-left: 25px !important;
     padding-right: 25px !important;
-    height: auto !important;  
+    height: auto !important; 
   }
   
-  .home-card-view {
-    box-shadow: 0 4px 5px 3px gray !important;
+.home-card .home-card-view {
+    /* box-shadow: 0 4px 5px 3px gray !important; */
     color: #000 !important;
     background-color: #fff !important;
     opacity: 0.9 !important;
@@ -221,7 +201,15 @@
     height: 100% !important;
   }
 
-.icon-colour {
+  .home-card .home-card-view .btn{
+    background-color: #e0aa3e !important;
+    border: 0 !important;
+    padding: 13px;
+    font-size: 1.1em;
+    margin: 20px;
+  }
+
+.home-card .home-card-view .icon-colour {
     color: #e0aa3e !important;
     font-size: 50px !important;
     text-align: left !important;
@@ -230,11 +218,9 @@
 .home-content .home-buttons{
     background-color: #e0aa3e !important;
     border: 0 !important;
-    padding: 10px;
-    font-size: 0.5em;
-}
-.products .products-buttons{
-  margin-right: 5px;
+    padding: 12px 15px;
+    font-size: 1em;
+    margin-top: 20px;
 }
 
 /* #the four steps */
@@ -254,9 +240,13 @@ img{
   background: #f1f1f1;
   margin-bottom: 2rem;
 }
+
 .home-steps .card h3{
   margin-bottom: 2rem;
   color: #000;
+  border-bottom: 5px solid #e0aa3e;
+  padding-bottom: 10px;
+  width: 160px;
 }
 .home-steps .card p{
   color: #000;

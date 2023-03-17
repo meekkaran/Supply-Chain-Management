@@ -12,6 +12,8 @@ import FollowTheSignsIcon from '@mui/icons-material/FollowTheSigns';
 import AddReactionIcon from '@mui/icons-material/AddReaction';
 import DoneIcon from '@mui/icons-material/Done';
 import Button from "react-bootstrap/Button";
+import MapsUgcIcon from '@mui/icons-material/MapsUgc';
+import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import supplychain from "../../Assets/supplychain.png";
 import homeLogo from "../../Assets/air4.jpg";
 import websiteBg from "../../Assets/websiteBg.jpg";
@@ -21,56 +23,52 @@ import delivery from "../../Assets/delivery.jpg";
 import packaging from "../../Assets/packaging.jpg";
 import sourcing from "../../Assets/sourcing.jpg";
 
+
 function Home2() {
   return (
     <Container fluid className="home-about-section">
 
       
       {/* cards section showing the process */}
-      <Container>
-      <h1 style={{ textAlign: "center" }}>How We Work</h1>
+      <Container className="header">
+      <h1 style={{ textAlign: "center" }}>How We Operate</h1>
+      <h4 style={{ textAlign: "center" }}>We offer you dedicated end-to-end supply chain expertise, <br/>and understand
+       the challenges and specificities of your industry.</h4>
         <Row>
-          <Col md={3} className="home-card">
+          <Col md={4} className="home-card">
             <Card className="home-card-view">
               <Card.Body>
                 <FindInPageIcon className="icon-colour" style={{ fontSize: "40px" }}/>
                 <Card.Title>Choose A service </Card.Title>
                 <Card.Text >
-                  <p>Select the best supply method that best meets your budget and needs</p>
+                  <p>ASL has a wide range of products and solutions to meet your logistics requirements – 
+                    everything from simple shipping and transportation to supply chain consultancy to transformative solutions 
+                    that span the supply chain.</p>
                 </Card.Text>
               </Card.Body>
             </Card>
           </Col>
-          <Col md={3} className="home-card">
+          <Col md={4} className="home-card">
             <Card className="home-card-view">
               <Card.Body>
                 <RequestQuoteIcon className="icon-colour" style={{ fontSize: "40px" }}/>
                 <Card.Title>Get A Quote</Card.Title>
                 <Card.Text >
-                  <p>Select the best supply method that best meets your budget and needs</p>
+                  <p>Estimate costs and select the best supply method that best meets your budget and needs.Simply 
+                    fill out your details to receive a quote and go ahead to book and work with us.</p>
                 </Card.Text>
               </Card.Body>
             </Card>
           </Col>
-          <Col md={3} className="home-card">
+          <Col md={4} className="home-card">
             <Card className="home-card-view">
-              <Card.Body>
-                <FollowTheSignsIcon className="icon-colour" style={{ fontSize: "40px" }}/>
-                <Card.Title>Track your product </Card.Title>
-                <Card.Text >
-                  <p>Select the best supply method that best meets your budget and needs</p>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={3} className="home-card">
-            <Card className="home-card-view">
-              
               <Card.Body>
                 <AddReactionIcon className="icon-colour" style={{ fontSize: "40px" }}/>
                 <Card.Title>Receive your package </Card.Title>
                 <Card.Text style={{ textAlign: "justify" }}>
-                  <p>Get your package delivered to you safely</p>
+                  <p>ASL ensures safe, secure, efficient and effective handling, transport, 
+                    distribution, storage, retailing, consumption and recovery, reuse or disposal combined with
+                     maximizing consumer value in pur packaging and delivery </p>
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -83,11 +81,13 @@ function Home2() {
         <Row>
           <Col md={12}>
           <h1>Arabian Sourcing is much more than a Supply chain</h1>
+          <h5>Our simple system offers an easy supply chain management plan - each with realistic cost projection,<br/> 
+              - a step by step procedure to get your items delivered safely to your door steps </h5>
           <img src={websiteBg} className="home-about-img"/>
           </Col>
         </Row>
 
-        <Row>
+        <Row className="home-about-row">
           <Col md={4} className="home-about-details">
             <img src={personPhone} alt="home pic"/>
           </Col>
@@ -97,7 +97,7 @@ function Home2() {
             <Col md={4}>
               <div className="details">
                 <DoneIcon className="details-icon"/>
-                <p>Get advisory services on your products including production planning, demand estimation, procurement planning,
+                <p className="part1">Get advisory services on your products including production planning, demand estimation, procurement planning,
                     inventory management control and design</p>
               </div>
             </Col>
@@ -140,20 +140,6 @@ function Home2() {
             </Row>
           </Col>
         </Row>
-        
-        {/* home-products section */}
-        <Container className="home-products-section">
-        <div className="home-products">
-          <h2>Our Products & Solutions</h2>
-          <p>ASL has a wide range of products and solutions to meet your logistics requirements – 
-            everything from <bold>simple shipping and transportation</bold> to <bold>supply chain consultancy </bold>to 
-            transformative solutions that span the supply chain.</p>
-            <div className="home-products-btn">
-              <a href="/about"><Button className="btn">Learn More About Us</Button></a>
-              <a href="/services"><Button className="btn">See our products and solutions</Button></a>
-            </div>
-        </div>
-        </Container>
 
       </Container>
 
@@ -215,6 +201,37 @@ function Home2() {
           </Col>
         </Row>
       </Container>
+
+      {/* home final content */}
+      <Container>
+      <Row>
+          <Col md={6} className="home-card">
+            <Card className="home-card-view">
+              <Card.Body>
+                <WbSunnyIcon className="icon-colour" style={{ fontSize: "40px" }}/>
+                <Card.Title>Learn More </Card.Title>
+                <Card.Text >
+                  <p>Explore our products and services. We are the right decision for your business</p>
+                </Card.Text>
+                <Button className="btn" href="/about" target="_blank">Get Started With Us</Button>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col md={6} className="home-card">
+            <Card className="home-card-view">
+              <Card.Body>
+                <MapsUgcIcon className="icon-colour" style={{ fontSize: "40px" }}/>
+                <Card.Title>Need Help?</Card.Title>
+                <Card.Text >
+                  <p>Need advice? Any Questions? Comments?</p>
+                </Card.Text>
+                <Button className="btn" href="/contact" target="_blank">Reach out to us</Button>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
+
 
     </Container>
   );
