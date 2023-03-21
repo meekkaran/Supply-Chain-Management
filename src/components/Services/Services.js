@@ -11,6 +11,8 @@ import KeyboardReturnIcon from '@mui/icons-material/KeyboardReturn';
 import image1 from "../../Assets/homeimg1.jpg";
 import image2 from "../../Assets/homeimg2.jpg";
 import image3 from "../../Assets/air3.jpg";
+import MapsUgcIcon from '@mui/icons-material/MapsUgc';
+import WbSunnyIcon from '@mui/icons-material/WbSunny';
 
 function Services() {
   return (
@@ -29,38 +31,48 @@ function Services() {
               </div>
             </Col>
             <Col md={4} className="services-sector">
-              <img src={image1} component="img" alt="card-img" /> 
-              <h5>Fast-moving Consumer goods</h5>
-              <p>We offer fmcgs all step of the way.</p>
+              <div className="sectors">
+                <img src={image1} component="img" alt="card-img" /> 
+                <h5>Fast-moving Consumer goods</h5>
+                <p>We offer a high level of fast moving consumer goods to our clients, every step of the way.</p>
+              </div>
             </Col>
             <Col md={4} className="services-sector">
+              <div className="sectors">
               <img src={image1} component="img" alt="card-img" /> 
-              <h5>Retail</h5>
-              <p>Even the smaller markets are involved with us</p>
+                <h5>Retail</h5>
+                <p>With our accurate logistic solutions, we create value all the way from supply chain management to slaed</p>
+              </div>
             </Col>
           </Row>
           <Row>
             <Col md={4} className="services-sector">
-              <img src={image1} component="img" alt="card-img" /> 
-              <h5>Technology and IT</h5>
-              <p>We help you build your solution around enables that produce high quality results</p>
+              <div className="sectors">
+                <img src={image1} component="img" alt="card-img" /> 
+                <h5>Technology and IT</h5>
+                <p>We help you build your solution around enables that produce high quality results</p>
+              </div>
             </Col>
             <Col md={4} className="services-sector">
-              <img src={image1} component="img" alt="card-img" /> 
-              <h5>Autoparts and Accessories Manufacturing</h5>
-              <p>We offer high quality products and solutions across automotive field.</p>
+              <div className="sectors">
+                <img src={image1} component="img" alt="card-img" /> 
+                <h5>Autoparts and Accessories Manufacturing</h5>
+                <p>We offer high quality products and solutions across automotive field.</p>
+              </div>
             </Col>
             <Col md={4} className="services-sector">
-              <img src={image1} component="img" alt="card-img" /> 
-              <h5>Car, Automobile and Automation </h5>
-              <p>We offer high quality products and solutions across automotive field.</p>
+              <div className="sectors">
+                <img src={image1} component="img" alt="card-img" /> 
+                <h5>Car, Automobile and Automation </h5>
+                <p>Arabian Sourcing offerS high quality products and solutions across the automotive field.</p>
+              </div>
             </Col>
           </Row>
         </Container>
         
 
         {/* #types of services offered */}
-        <Container>
+        <Container className="services-section-2">
           <Row>
             <Col md={12} className="services">
               <img  src={image1} className="services-image" alt="card-img" />
@@ -109,89 +121,48 @@ function Services() {
           </Row>
         </Container>
 
-
-
-
-        {/* <Container>
-        <Row>
-          <Col md={4} className="services-sector" className="home-card">
+        {/* services final content */}
+      <Container>
+      <Row>
+          <Col md={4} className="home-card">
             <Card className="home-card-view">
               <Card.Body>
-                <RateReviewIcon className="icon-colour"/>
-                <Card.Title>Planning </Card.Title>
+                <WbSunnyIcon className="icon-colour" style={{ fontSize: "40px" }}/>
+                <Card.Title>Ready to ship? </Card.Title>
                 <Card.Text >
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?</p>
+                  <p>Ask for quotation and get good rates.</p>
                 </Card.Text>
+                <Button className="btn" href="/about" target="_blank">Get Started</Button>
               </Card.Body>
             </Card>
           </Col>
           <Col md={4} className="home-card">
             <Card className="home-card-view">
               <Card.Body>
-                <SourceIcon  className="icon-colour"/>
-                <Card.Title>Sourcing</Card.Title>
+                <MapsUgcIcon className="icon-colour" style={{ fontSize: "40px" }}/>
+                <Card.Title>Need Help?</Card.Title>
                 <Card.Text >
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                     Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo 
-                     reprehenderit optio amet ab temporibus asperiores quasi cupiditate.Eligendi non quis Eligendi non quis exercitationem culpa nesciunt nihil autexercitationem culpa nesciunt nihil aut Voluptatum ducimus voluptates voluptas?</p>
+                  <p>Need advice? Any Questions? Comments?</p>
                 </Card.Text>
+                <Button className="btn" href="/contact" target="_blank">Reach out to us</Button>
               </Card.Body>
             </Card>
           </Col>
           <Col md={4} className="home-card">
             <Card className="home-card-view">
               <Card.Body>
-                <FactoryIcon className="icon-colour"/>
-                <Card.Title>Manufacturing </Card.Title>
+                <MapsUgcIcon className="icon-colour" style={{ fontSize: "40px" }}/>
+                <Card.Title>Other services enquiries?</Card.Title>
                 <Card.Text >
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil autEligendi non quis exercitationem culpa nesciunt nihil autEligendi non quis exercitationem
-                     culpa nesciunt nihil autEligendi non quis exercitationem culpa nesciunt nihil autEligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?</p>
+                  <p>Contact us and we will respond within the next two working days.</p>
                 </Card.Text>
+                <Button className="btn" href="/contact" target="_blank">Enquire</Button>
               </Card.Body>
             </Card>
           </Col>
         </Row>
+      </Container>
 
-        <Row>
-          <Col md={4} className="home-card">
-            <Card className="home-card-view">
-              
-              <Card.Body>
-                <Inventory2Icon  className="icon-colour"/>
-                <Card.Title>Packaging </Card.Title>
-                <Card.Text style={{ textAlign: "justify" }}>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?</p>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={4} className="home-card">
-            <Card className="home-card-view">
-              <Card.Body>
-                <FlightIcon  className="icon-colour"/>
-                <Card.Title>Delivering</Card.Title>
-                <Card.Text style={{ textAlign: "justify" }}>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                     Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo 
-                     reprehenderit optio amet ab temporibus asperiores quasi cupiditate.Eligendi non quis Eligendi non quis exercitationem culpa nesciunt nihil autexercitationem culpa nesciunt nihil aut Voluptatum ducimus voluptates voluptas?</p>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={4} className="home-card">
-            <Card className="home-card-view">
-              <Card.Body>
-                <KeyboardReturnIcon  className="icon-colour"/>
-                <Card.Title>Returning </Card.Title>
-                <Card.Text style={{ textAlign: "justify" }}>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil autEligendi non quis exercitationem culpa nesciunt nihil autEligendi non quis exercitationem
-                     culpa nesciunt nihil autEligendi non quis exercitationem culpa nesciunt nihil autEligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?</p>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
-      </Container> */}
       </Container>
     </section>
   );

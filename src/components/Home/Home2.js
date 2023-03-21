@@ -141,9 +141,7 @@ function Home2() {
           </Col>
         </Row>
 
-      </Container>
-
-      
+      </Container>  
 
       {/* #the four steps */}
       <Container className="home-steps">
